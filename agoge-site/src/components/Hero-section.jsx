@@ -7,9 +7,10 @@ import { useGSAP } from '@gsap/react'
 
 const navigation = [
 , // Din nya sida
-    { name: 'Home', href: '/' },
-    { name: 'Analys', href: '/Analys' },
-    { name: 'Contact', href: '/contact' },
+{ name: 'Hem', href: '/' },{ name: 'Onboarding', href: '/onboarding' }, { name: 'Om oss', href: '/omoss' }, { name: 'Visualisering', href: '/Analys' },
+
+{ name: 'Utveckling', href: '/contact' }, { name: 'Kontakta oss', href: '/contact' },
+
 
 
 ]
@@ -131,36 +132,36 @@ export default function HeroSection() {
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1 %)',
             }}
-            className="movingShape relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#d503ff] to-[#9089fc] md:opacity-30 sm:opacity-60 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            className="movingShape relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#f3a701] to-[#ffae00] md:opacity-30 sm:opacity-60 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm/6 text-white-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
+            <div className="relative rounded-full px-3 py-1 text-sm/6 text-yellow-600 ring-1 ring-gray-800 hover:ring-gray-900/20">
+              Vad skulle en onboarding kosta er? Testa vår kalkylator!.{' '}
+              <a href="/analys" className="font-semibold text-indigo-600">
                 <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                Klicka här! <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div  className="text-center">
-            <h1 id="hero-text"className="text-5xl font-semibold text-balance text-yellow-700/60 sm:text-7xl opacity-0">
-              Data to enrich your online business
+            <h1 id="hero-text"className="text-5xl font-semibold text-balance text-gray-400 sm:text-7xl opacity-0">
+            Optimera er verksamhet med datadrivna insikter
+
             </h1>
-            <p id="#"className="mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat.
+            <p id="#"className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
+            Testa vår datavisualisering och upptäck hur data kan transformera er affärsstrategi.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                href="/analys"
+                className="rounded-md bg-yellow-700/60 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-yellow-700/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Get started
+                Visualisering
               </a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">
-                Learn more <span aria-hidden="true">→</span>
+              <a href="/contact" className="text-sm/6 font-semibold text-gray-100">
+                Kontakta oss <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
@@ -174,7 +175,7 @@ export default function HeroSection() {
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
             }}
-            className=" movingShape relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#d91cff] to-[#9089fc] md:opacity-30 sm:opacity-60 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            className=" movingShape relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#f3a701] to-[#ffae00] md:opacity-30 sm:opacity-60 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           />
         </div>
       </div>

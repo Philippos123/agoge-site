@@ -10,18 +10,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 const features = [
   {
-    name: 'Förstå kunden',
-    description: ' Med hjälp av att analysera data kan du förstå er kund',
+    name: 'Förstå era kunder',
+    description: ' Identifiera beteenden, behov och trender för att optimera kundupplevelsen.',
     icon: CloudArrowUpIcon,
   },
   {
     name: 'Effektivisera processer',
-    description: ' Med data kan du effektivisera processer och hitta flaskhalsar',
+    description: ' Upptäck flaskhalsar och förbättra arbetsflöden för högre produktivitet.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Spara pengar',
-    description: '  Genom att analysera data kan du hitta onödiga kostnader',
+    name: 'Minska kostnader',
+    description: ' Hitta dolda utgifter och fatta smartare beslut för bättre lönsamhet.',
     icon: ServerIcon,
   },
 ];
@@ -39,17 +39,17 @@ export default function Demo() {
           <div className="lg:pt-4 lg:pr-8">
             <div id="hero-flow" className="lg:max-w-lg">
               <h2 className="text-base font-semibold text-gray-600"></h2>
-              <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-600 sm:text-5xl">
-                Vad gör data?
+              <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-400 sm:text-5xl">
+              Testa själv – skapa en egen visualisering
               </p>
-              <p className="mt-6 text-lg text-gray-600">
-                Linje diagram är bra på att visa förändringar över tid eller jämföra data från olika källor.
+              <p className="mt-6 text-lg text-gray-300">
+              Linjediagram är perfekt för att visa förändringar över tid eller jämföra data från olika källor.
               </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-600 lg:max-w-none">
+              <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-400 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      {React.createElement(feature.icon, { className: "absolute top-1 left-1 size-5 text-indigo-600" })}
+                    <dt className="inline font-semibold text-yellow-700/70">
+                      {React.createElement(feature.icon, { className: "absolute top-1 left-1 size-5 text-yellow-600" })}
                       {feature.name}
                     </dt>
                     <dd className="inline">{feature.description}</dd>

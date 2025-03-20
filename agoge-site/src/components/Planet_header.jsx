@@ -28,7 +28,7 @@ const PlanetHeader = () => {
   
 
   return (
-    <h2 ref={headerRef} style={{ textAlign: 'center', color: 'gray', fontSize: '40px' }}>
+    <h2 ref={headerRef} style={{ textAlign: 'center', color: '#C5C5C5', fontSize: '40px' }}>
       Planet Data Network
     </h2>
   );

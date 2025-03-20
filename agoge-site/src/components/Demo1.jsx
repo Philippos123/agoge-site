@@ -10,18 +10,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 const features = [
   {
-    name: 'Förstå kunden',
-    description: ' Med hjälp av att analysera data kan du förstå er kund',
+    name: 'Förstå era kunder',
+    description: ' Jämför kundsegment och deras beteenden över olika tidsperioder.',
     icon: CloudArrowUpIcon,
   },
   {
     name: 'Effektivisera processer',
-    description: ' Med data kan du effektivisera processer och hitta flaskhalsar',
+    description: ' Jämför produktivitet eller effektivitet mellan olika avdelningar eller tidsramar.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Spara pengar',
-    description: '  Genom att analysera data kan du hitta onödiga kostnader',
+    name: 'Minska kostnader',
+    description: '  Visualisera kostnadsvariationer och hitta områden för besparingar',
     icon: ServerIcon,
   },
 ];
@@ -42,18 +42,17 @@ export default function Demo1() {
           </div>
           <div className="lg:pt-4 lg:pr-8">
             <div id="#" className="lg:max-w-lg">
-              <h2 className="text-base font-semibold text-gray-600"></h2>
-              <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-600 sm:text-5xl">
-                Vad gör ett Stapel diagram?
+              <h2 className="text-base font-semibold text-gray-400"></h2>
+              <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-400 sm:text-5xl">
+              Vad gör ett stapeldiagram?
               </p>
-              <p className="mt-6 text-lg text-gray-600">
-                Stapel diagram är bra på att visa förändringar över tid eller jämföra data från olika källor.
-              </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-600 lg:max-w-none">
+              <p className="mt-6 text-lg text-gray-300">
+              Stapeldiagram är utmärkta för att visa hur värden förändras över tid eller för att jämföra olika grupper eller kategorier. Perfekt för att analysera försäljning, produktprestanda eller andra nyckeltal.              </p>
+              <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-300 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      {React.createElement(feature.icon, { className: "absolute top-1 left-1 size-5 text-indigo-600" })}
+                    <dt className="inline font-semibold text-yellow-700/70">
+                      {React.createElement(feature.icon, { className: "absolute top-1 left-1 size-5 text-yellow-600" })}
                       {feature.name}
                     </dt>
                     <dd className="inline">{feature.description}</dd>

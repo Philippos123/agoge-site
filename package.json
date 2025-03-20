@@ -5,6 +5,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-three/drei": "^9.121.5",
     "@react-three/fiber": "^8.17.14",
+    "font-awesome": "^4.7.0",
     "git": "^0.1.5",
     "gsap": "^3.12.7",
     "papaparse": "^5.5.2",

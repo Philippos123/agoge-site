@@ -1,22 +1,22 @@
 import HeroSection from '../components/Hero-section';
-import Features from '../components/Features';
-import PlanetHeader from '../components/Planet_header';
-import SpaceChart from '../components/SpaceChart';
-import Offer from '../components/offers';
 import About from '../components/About-us';
 import Footer from '../components/Footer';
-import Aboutus from '../components/About';
+import Testimonial from '../components/Testimonial';
+import OurMissionmainHomePage from '../components/HomePageAbout';
+import LogoClouds from '../components/LogoClouds';
+import Products from '../components/Products';
+
+
 
 
 const Home = () => {
   return (
     <>
       <HeroSection />
-      <Features />
-      <PlanetHeader />
-      <SpaceChart />
-      <Offer />
-      <Aboutus />
+      <OurMissionmainHomePage />
+      <Products />
+      <LogoClouds />
+      <Testimonial />
       <About />
       <Footer />
     </>

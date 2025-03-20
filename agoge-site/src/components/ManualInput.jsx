@@ -21,10 +21,10 @@ const ManualInput = ({ onDataUpdate }) => {
   };
 
   return (
-    <div>
-      <h2 className="text-3xl font-bold mb-2 text-gray-600 pb-3">Testa vårat linjediagram</h2>
+    <div className="pt-10">
+      <h2 className="text-2xl font-bold mb-2 text-gray-400 pb-3">Testa vårat linjediagram</h2>
     <div className="p-4 border rounded-lg shadow-lg ">
-      <h2 className="text-sl font-bold mb-2 text-white">Lägg till egen data för att testa</h2>
+      <h2 className="text-sl font-bold mb-2 text-white">Lägg till er egen data för att se visualiseringen i realtid!</h2>
       <div className=" gap-2">
         <input
           type="text"
