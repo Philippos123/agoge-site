@@ -17,9 +17,9 @@ const Analys = () => {
     <Features />
     <PlanetHeader />
     <PlanetOfData />
+    <Offer />
     <Demo />
     <Demo1 />
-    <Offer />
     <Footer />
     </>
   );

@@ -83,7 +83,7 @@ export default function Offer() {
     return (
       <div className="bg-black py-24 sm:py-32">
         <div  className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-center text-base/7 font-semibold text-yellow-600/40">Deploy faster</h2>
+          <h2 className="text-center text-base/7 font-semibold text-purple-600">Deploy faster</h2>
           <p id="deploy-header"className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-200 sm:text-5xl">
           Datadriven analys – tydliga insikter, bättre beslut
           </p>

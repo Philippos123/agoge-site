@@ -51,8 +51,8 @@ export default function Demo1() {
               <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-300 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-yellow-700/70">
-                      {React.createElement(feature.icon, { className: "absolute top-1 left-1 size-5 text-yellow-600" })}
+                    <dt className="inline font-semibold text-purple-400">
+                      {React.createElement(feature.icon, { className: "absolute top-1 left-1 size-5 text-indigo-600" })}
                       {feature.name}
                     </dt>
                     <dd className="inline">{feature.description}</dd>

@@ -70,7 +70,7 @@ export default function Onboardingcta() {
   <img
     alt="Bildbeskrivning"
     src="/testbild.png"
-    className=" ctabild w-[30rem] max-w-none rounded-xl ring-1 shadow-xl ring-gray-400/10 sm:w-[40rem] lg:w-[45rem] mx-auto"
+    className=" ctabild w-[30rem] max-w-none rounded-xl  shadow-xl ring-gray-400/10 sm:w-[40rem] lg:w-[45rem] mx-auto"
   />
 </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">

@@ -47,7 +47,7 @@ export default function Features() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pt-4 lg:pr-8">
             <div id="flow-img"className="lg:max-w-lg">
-              <h2 className="text-base/7 font-semibold text-yellow-600/40">Mer insikt med Data</h2>
+              <h2 className="text-base/7 font-semibold text-purple-600">Mer insikt med Data</h2>
               <p  className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-400 sm:text-5xl">
               Från data till insikt – och konkurrensfördel
               </p>
@@ -58,8 +58,8 @@ export default function Features() {
               <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-300 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-yellow-700/70">
-                      <feature.icon aria-hidden="true" className="absolute top-1 left-1 size-5 text-yellow-600" />
+                    <dt className="inline font-semibold text-purple-400">
+                      <feature.icon aria-hidden="true" className="absolute top-1 left-1 size-5 text-indigo-400" />
                       {feature.name}
                     </dt>{' '}
                     <dd className="inline">{feature.description}</dd>

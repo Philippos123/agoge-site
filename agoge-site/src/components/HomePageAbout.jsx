@@ -9,7 +9,7 @@ export default function OurMissionHomePage() {
                     <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
                         <img class=" rounded-xl border-x-3 border-yellow-700 object-cover shadow-lg shadow-yellow-600/50" src="/Ourmission.jpg" alt="about Us image" />
                     </div>
-                    <img class="sm:ml-0 ml-auto rounded-xl object-cover shadow-2xl " src="/Logotyp-Agoge.png"
+                    <img class="sm:ml-0 ml-auto rounded-xl object-cover shadow-2xl " src="/Logotyp-Agoge-white.png"
                         alt="about Us image"/>
                         
                 </div>
