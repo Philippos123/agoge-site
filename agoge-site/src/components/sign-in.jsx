@@ -1,13 +1,15 @@
 export default function SignIn() {
   return (
-    <div className="bg-gray-900 isolated w-[100vw] h-[100vh] flex justify-center items-center">
+    <div className="bg-gray-900 isolated h-full w-[100vw] lg:py-30 sm:py-10 flex justify-center items-center">
       <div className="max-w-md w-full mx-auto px-8 sm:px-6 lg:px-8">
+      <h2 className="text-4xl font-semibold text-white text-center mb-10 uppercase pt-10 ">Agoges <br></br>kunskaps portal</h2>
+
         <img
           src="/Logotyp-Agoge-white.png"
           className="w-42 h-auto mx-auto mb-6"
           alt="Agoge Logo"
         />
-        <h2 className="text-2xl font-extrabold text-white text-center mb-10">Sign in to your account</h2>
+
         <form action="#" method="POST" className="space-y-6">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-100">
@@ -32,7 +34,7 @@ export default function SignIn() {
                 Password
               </label>
               <div className="text-sm">
-                <a href="#" className="font-semibold text-yellow-500 hover:text-yellow-500">
+                <a href="#" className="font-semibold text-yellow-500 hover:text-yellow-500 ">
                   Forgot password?
                 </a>
               </div>
@@ -45,7 +47,7 @@ export default function SignIn() {
                 type="password"
                 required
                 autoComplete="current-password"
-                className="block w-full rounded-md py-3 bg-white px-3 text-base text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
+                className="block w-full rounded-md py-4 bg-white px-3 text-base text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"
               />
             </div>
           </div>
@@ -59,7 +61,7 @@ export default function SignIn() {
             </button>
           </div>
         </form>
-        <p className="mt-10 text-center text-sm text-gray-500">
+        <p className="mt-10 text-center text-sm text-gray-500 pb-15">
           Not a member?{' '}
           <a href="#" className="font-semibold text-yellow-600 hover:text-indigo-500">
             Start a 14 day free trial

@@ -9,7 +9,7 @@ const navigation = [
 , // Din nya sida
 { name: 'Hem', href: '/' },{ name: 'Onboarding', href: '/onboarding' }, { name: 'Om oss', href: '/omoss' }, { name: 'Visualisering', href: '/Analys' },
 
-{ name: 'Utveckling', href: '/contact' }, { name: 'Kontakta oss', href: '/contact' },
+{ name: 'Utveckling', href: '/utveckling' }, { name: 'Kontakta oss', href: '/contact' },
 
 
 
@@ -57,7 +57,7 @@ export default function HeroSection() {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only text-white">Agoge</span>
               <img
                 alt=""
@@ -90,13 +90,17 @@ export default function HeroSection() {
             </a>
           </div>
         </nav>
-        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden sticky">
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Agoge</span>
-                
+                <img
+                alt=""
+                src="Logotyp-Agoge-white.png"
+                className="h-20 w-auto absolute inset-0 pt-2 pl-5"
+              />
               </a>
               <button
                 type="button"

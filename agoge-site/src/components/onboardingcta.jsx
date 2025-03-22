@@ -10,14 +10,17 @@ export default function Onboardingcta() {
     {
       opacity: 0,
       x: 300,
-      willChange: 'transform, opacity' // Förbättrar prestanda genom att låta webbläsaren förbereda sig
+      willChange: 'transform, opacity', // Förbättrar prestanda genom att låta webbläsaren förbereda sig
+
     },
     {
       duration: 3,
       opacity: 1,
       x: 0,
+      marker: true,
       ease: 'power2.out',
       force3D: true, // Förbättrar GPU-prestanda
+
     }
   );
     },[]); // Tom array gör att det körs endast en gång vid första render
