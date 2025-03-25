@@ -6,6 +6,7 @@ import OmOss from './pages/OmOss';
 import Onboarding from './pages/Onboarding';
 import LoginPage from './pages/login';
 import Utveckling from './pages/utveckling';
+import Dashboard from './pages/dashboard';  // Använd Dashboard med stort D för PascalCase
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/onboarding" element={<Onboarding />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/utveckling" element={<Utveckling />} />
+        <Route path="/dashboard" element={<Dashboard />} />  {/* Korrekt komponentimport */}
 
         
         
