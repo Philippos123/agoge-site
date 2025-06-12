@@ -2,22 +2,23 @@ import Footer from '../components/Footer';
 import OnboardingData from '../components/onboardingData';  
 import Navbar from '../components/NavBar';
 import About from '../components/About-us';
-import Stats from '../components/Stats';
 import Kalkylator from '../components/Kalkylator';
-import Onboardingcta from '../components/onboardingcta'; 
-import LogoClouds from '../components/LogoClouds';
-
+import { HeroSectionOne } from '../components/CTA';
+import { HeroScrollDemo } from '../components/hero-scroll';
+import { DualViewTabs } from '../components/DuelViewTabs';
+import { AppleCardsCarouselDemo } from '../components/apple-card-carousel';
 
 
 const Onboarding = () => {
   return (
     <>
       <Navbar />
-      <Onboardingcta />
+      <HeroScrollDemo />
+      <DualViewTabs />
+      <AppleCardsCarouselDemo />
+      <HeroSectionOne />
       <OnboardingData />
-      <LogoClouds />
       <Kalkylator />
-      <Stats />
       <About />
       <Footer />
     </>

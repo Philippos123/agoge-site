@@ -27,11 +27,11 @@ export default function Onboardingcta() {
 
 
   return (
-    <div className=" relative isolate overflow-hidden overflow-x-hidden bg-black px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div className=" relative isolate overflow-hidden overflow-x-hidden  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           aria-hidden="true"
-          className="absolute top-0 left-[max(50%,25rem)] h-[64rem] w-[128rem] -translate-x-1/2 stroke-yellow-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          className="absolute top-0 left-[max(50%,25rem)] h-[64rem] w-[128rem] -translate-x-1/2 stroke-blue-800/30 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
         >
           <defs>
             <pattern
@@ -45,7 +45,7 @@ export default function Onboardingcta() {
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-yellow-400/30">
+          <svg x="50%" y={-1} className="overflow-visible fill-blue-300/30">
             <path
               d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
               strokeWidth={0}
@@ -60,7 +60,7 @@ export default function Onboardingcta() {
             <div className="lg:max-w-lg">
               <p className="text-base/7 font-semibold text-yellow-700">Onboarda snabbare och smartare
               </p>
-              <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-300 sm:text-5xl">
+              <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-primary-custom sm:text-5xl">
               En bättre start för dina nya medarbetare
               </h1>
               <p className="mt-6 text-xl/8 text-gray-300">
@@ -73,32 +73,32 @@ export default function Onboardingcta() {
   <img
     alt="Bildbeskrivning"
     src="/testbild.png"
-    className=" ctabild w-[30rem] max-w-none rounded-xl  shadow-xl ring-gray-400/10 sm:w-[40rem] lg:w-[45rem] mx-auto"
+    className=" ctabild w-[30rem] max-w-none sm:w-[40rem] lg:w-[45rem] mx-auto"
   />
 </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base/7 text-gray-300 lg:max-w-lg">
+            <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
               <p>
               Med vår digitala onboardingplattform får ni ett strömlinjeformat flöde som säkerställer att varje nyanställd får rätt information, i rätt tid – helt automatiserat.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-300">
                 <li className="flex gap-x-3">
                   <CloudArrowUpIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
-                  <span>
+                  <span className="text-gray-700">
                     <strong className="font-semibold text-yellow-700">Automatiska onboarding-flöden</strong> Skapa personliga onboarding-resor som anpassas efter roll, team och avdelning.
                      Inga fler manuella utskick – allt sker digitalt.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
                   <LockClosedIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
-                  <span>
+                  <span className="text-gray-700">
                     <strong className="font-semibold text-yellow-700">Digitalt dokumentarkiv</strong> Alla viktiga policys, checklistor och introduktionsdokument samlade på ett ställe – enkelt att hitta, enkelt att använda.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
                   <ServerIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
-                  <span>
+                  <span className="text-gray-700">
                     <strong className="font-semibold text-yellow-700">Analys och uppföljning</strong> Följ varje medarbetares framsteg i realtid och identifiera flaskhalsar i onboardingprocessen för kontinuerlig förbättring.
                   </span>
                 </li>

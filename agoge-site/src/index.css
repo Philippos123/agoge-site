@@ -1,5 +1,23 @@
 @import "tailwindcss";
-@import 'font-awesome/css/font-awesome.min.css';
+
+
+@theme inline {
+  --animate-meteor-effect: meteor 25s linear infinite;
+  
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-2000px);
+      opacity: 0;
+    }
+  }
+}
 
 
 :root {
@@ -8,7 +26,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(168, 168, 168, 0.87);
+  color: rgba(158, 158, 158, 0.87);
   
 
   font-synthesis: none;
@@ -19,46 +37,75 @@
 
 a {
   font-weight: 500;
-  color: #8d8d8d;
+  color: #b4b4b4;
   text-decoration: inherit;
 }
 a:hover {
-  color: #000000;
+  color: oklch(0.5908 0.1523 268.82); /* En Tailwind-blå nyans (blue-600) */
 }
 
+@theme {
+  --color-primary: oklch(0.3934 0.1523 268.82); /* Tailwind-blå nyans */
+  --color-agoge-400: oklch(0.4941 0.1054 89.8);
+  --color-agoge-500: oklch(0.5908 0.1054 89.8); /* Tailwind-gul nyans */
+  --color-agoge-600: oklch(0.6929 0.1054 89.8);
+  --color-agoge-700: oklch(0.7938 0.1054 89.8);
+  --color-primary-400: oklch(0.4911 0.1523 268.82);
+  --color-primary-500: oklch(0.5908 0.1523 268.82);
+}
 
+ul {
+  color: oklch(0.5908 0.1523 268.82);
+}
 
 body {
-  @apply bg-black;
+  @apply bg-zinc-900;
   margin: 0;
   overflow-x: hidden;
-  overflow-y: scroll;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overscroll-behavior-y: contain;
 }
 
 @media (max-width: 768px) {
-  body, html {
+  html, body {
     overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  [data-scroll-container] {
+    overflow: hidden;
   }
 }
 @media (max-width: 368px) {
   body, html {
     overflow-x: hidden;
+    width: 100%;
+
   }
 }
+
+.text-primary-custom {
+  color: #967a26;
+}
+
+.text-secondary-custom {
+  color: #2563eb;
+}
+.primary-custom {
+  color: #967a26;
+}
+
+
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-button {
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
+
 button:hover {
   border-color: white;
 }
@@ -67,18 +114,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #697681;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: white;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+
 
 .container {
   justify-content: center; /* För att centrera horisontellt */
@@ -86,5 +122,25 @@ button:focus-visible {
 }
 
 
+.logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3748; /* Mörkgrå bakgrund */
+  border-radius: 0.5rem; /* Valfri rundning */
+  padding: 0.5rem; /* Anpassa efter behov */
+}
+
+.logo-item img {
+  max-height: 3rem; /* Anpassa storlek */
+}
 
 
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-20px) translateX(10px); }
+}
+@keyframes float-delay {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(15px) translateX(-10px); }
+}

@@ -1,55 +1,68 @@
-const callouts = [
-    {
-      name: 'On-boardning',
-      description: 'Förbered dina anställda för en smidig start',
-      imageSrc: 'https://attensi.com/wp-content/uploads/employee-onboarding-scaled.jpg',
-      imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-      href: '/onboarding',
-    },
-    {
-      name: 'Utveckling',
-      description: 'Systemutveckling och Webbdesign',
-      imageSrc: 'https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/22449/images/Ce6jQkHGSiCqnqTn9Yt4_d41586-019-00653-5_16459152_1_.png',
-      imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-      href: '/utveckling',
-    },
-    {
-      name: 'Analys',
-      description: 'Analysering, visualisering och AI för din data',
-      imageSrc: 'https://netnordic.se/app/uploads/sites/2/2024/10/Big-data-analys-1.png',
-      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-      href: '/analys',
-    },
-  ]
-  
-  export default function Products() {
-    return (
-      <div className="bg-black">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-            <h2 className="text-4xl font-bold text-white text-center ">Våra olika ben</h2>
-  
-            <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-              {callouts.map((callout) => (
-                <div key={callout.name} className="group relative">
-                  <img
-                    alt={callout.imageAlt}
-                    src={callout.imageSrc}
-                    className="w-full rounded-lg bg-white object-cover opacity-55  group-hover:opacity-100 max-sm:h-80 sm:aspect-2/1 lg:aspect-square"
-                  />
-                  <h3 className="mt-6 text-sm text-gray-500">
-                    <a href={callout.href}>
-                      <span className="absolute inset-0" />
-                      {callout.name}
-                    </a>
-                  </h3>
-                  <p className="text-base font-semibold text-white">{callout.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-  }
-  
+import React from "react";
+import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import {
+  IconDeviceLaptop,
+  IconAi,
+  IconCode,
+} from "@tabler/icons-react";
+import { Button } from "@material-tailwind/react"; // Changed import to Button
+
+export function BentoGridDemo() {
+  return (
+    <div>
+    <h2 className="text-center pt-50 pb-15 text-4xl text-primary-custom">Our Products</h2>
+    <BentoGrid className="max-w-7xl mx-auto md:grid-cols-2">
+      {items.map((item, i) => (
+        <BentoGridItem
+          key={i}
+          title={item.title}
+          description={item.description}
+          header={item.header}
+          icon={item.icon}
+          src={item.src}
+          href={item.href} // Add the href prop here
+          className={
+            i === 0
+              ? "md:col-span-2 md:row-span-2"
+              : i === 1
+              ? "md:col-span-1 md:row-span-2"
+              : i === 2
+              ? "md:col-span-3 md:row-span-1"
+              : ""
+          }
+        />
+      ))}
+    </BentoGrid>
+    </div>
+  );
+}
+const Skeleton = () => (
+  <div
+    className="flex flex-1 max-w-7xl min-h-[1rem] rounded-xl"></div>
+);
+const items = [
+  {
+    title: "Agoge Learning Hub",
+    description: "Tar upp ca 60% av bredden och dubbel höjd.",
+    header: <Skeleton />,
+    icon: <IconDeviceLaptop className="h-6 w-6 text-primary-custom" />,
+    src: "/learning.jpg",
+  },
+  {
+    title: "AI and Automation",
+    description: "Tar upp ca 40% av bredden.",
+    header: <Skeleton />,
+    icon: <IconAi className="h-6 w-6 text-primary-custom" />,
+    src: "/ai.jpg",
+    // No href here, so no button will be shown for this item
+  },
+  {
+    title: "Software Development",
+    description: "Sträcker sig under båda de övre rutorna.",
+    header: <Skeleton />,
+    icon: <IconCode className="h-6 w-6 text-primary-custom" />,
+    href: "/software-development", // Add the link URL
+    src: "/software.jpg",
+  },
+  // Lägg till fler items om du vill fylla ut gridden
+];

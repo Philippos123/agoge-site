@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import { Field, Label, Switch } from '@headlessui/react'
 
+
 const people = [
     {
       name: "Philip Samaras",
@@ -19,7 +20,7 @@ export default function Contact() {
   const [agreed, setAgreed] = useState(false)
 
   return (
-    <div className="isolate bg-black px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate px-6 py-24 sm:py-32 lg:px-8">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -33,8 +34,8 @@ export default function Contact() {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Kontakta oss </h2>
-        <p className="mt-2 text-lg/8 text-white">Nedan hittar ni alla uppgifter för att komma i kontakt med oss.</p>
+        <h2 className="text-4xl font-semibold tracking-tight text-balance text-blue-800 sm:text-5xl">Contact Us </h2>
+        <p className="mt-2 text-lg/8 text-black">Nedan hittar ni alla uppgifter för att komma i kontakt med oss.</p>
         <div className='mt-8 bg-slate-500/20 p-6 rounded-lg'>
         
         <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
@@ -43,10 +44,10 @@ export default function Contact() {
                 <div className="flex items-center gap-x-6">
                   <img alt="" src={person.imageUrl} className="size-30 rounded-full" />
                   <div>
-                    <h3 className="text-base/7 font-semibold tracking-tight text-gray-300">{person.name}</h3>
-                    <p className="text-sm/6 font-semibold text-yellow-700">{person.role}</p>
-                    <p className="text-sm/6 font-semibold text-yellow-700">{person.Phone}</p>
-                    <p className="text-sm/6 font-semibold text-yellow-700">{person.Email}</p>
+                    <h3 className="text-base/7 font-semibold tracking-tight text-blue-800">{person.name}</h3>
+                    <p className="text-sm/6 font-semibold text-blue-800">{person.role}</p>
+                    <p className="text-sm/6 font-semibold text-black">{person.Phone}</p>
+                    <p className="text-sm/6 font-semibold text-black">{person.Email}</p>
                   </div>
                   
                 </div>

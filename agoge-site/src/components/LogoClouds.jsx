@@ -1,6 +1,6 @@
 export default function LogoClouds() {
     return (
-      <div className=" bg-orange-200/80 py-24 sm:py-32">
+      <div className="bg-gray-700 rounded-2xl shadow-xl py-24 sm:py-32 mt-40">
         
         
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -31,7 +31,7 @@ export default function LogoClouds() {
             
             
           </div>
-          <h2 className="text-center text-lg/8 font-semibold text-black pt-10">Hade inte er logga passat bra här? :)</h2>
+          <h2 className="text-center text-lg/8 font-semibold text-primary-custom pt-10">Hade inte er logga passat bra här? :)</h2>
         </div>
       </div>
     )

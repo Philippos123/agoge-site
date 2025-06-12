@@ -1,57 +1,80 @@
-export default function OurMission() {
+import React from 'react';
+import { motion } from 'framer-motion';
+export const OurMission = () => {
     return (
-
-<section class="py-24 relative">
-        <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-            <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
-                <div
-                    class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
-                    <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                        <img class=" rounded-xl border-x-3 border-yellow-700 object-cover shadow-lg shadow-yellow-600/50" src="/Ourmission.jpg" alt="about Us image" />
+<div className='mb-[10vh]'>
+    <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative isolate overflow-hidden rounded-2xl border border-gray-200  px-8 py-12 shadow-lg sm:px-12"
+          >
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.blue.500),transparent)] opacity-10" />
+            <div className="absolute inset-y-0 right-0 -z-10 w-1/2 bg-gradient-to-l from-stone-950" />
+            <div className="mx-auto max-w-xl">
+              <h2 className="text-3xl font-bold tracking-tight text-agoge-500">
+                Our Awakening
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-300">
+                At Agoge, we observed humanity entering a strange stagnation - where people merely exist rather than thrive. We've become trapped in routines that suppress our natural curiosity and potential.
+              </p>
+              <div className="mt-8 flex items-center gap-x-4">
+                <div className="rounded-full bg-gray-100 p-1">
+                  <div className="rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 p-1">
+                    <div className="rounded-full bg-white p-2 text-gray-900">
+                      💡
                     </div>
-                    <img class="sm:ml-0 ml-auto rounded-xl object-cover shadow-2xl " src="/Logotyp-Agoge-white.png"
-                        alt="about Us image"/>
-                        
+                  </div>
                 </div>
-                
-                <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-                    <div class="w-full flex-col justify-center items-start gap-8 flex">
-                        <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                            <h2
-                                class="text-yellow-700 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                                Om Agoge
-                                </h2>
-                            <p class="text-gray-300 text-base font-normal leading-relaxed lg:text-start text-center">
-                            <p className="pb-5">På Agoge AB är vårt uppdrag att revolutionera onboarding och lärande genom att skapa en flexibel, engagerande och rolig upplevelse för alla.</p>
-                            <p className="pb-5">Vi tror att kunskap inte behöver vara tråkig eller svår att ta till sig – det ska vara inspirerande, tillgängligt och lätt att förstå
-                            genom vår digitala lösning gör vi det möjligt för anställda att lära sig på sina egna villkor, oavsett var de befinner sig i sin karriär.</p>
-                            <p className="pb-5">Vi strävar efter att göra onboarding till en långsiktig och meningsfull process som ger både nyanlända och erfarna medarbetare möjlighet att växa och utvecklas i sitt arbete.
-                            Vårt mål är att skapa ett inkluderande arbetsklimat, där alla, oavsett bakgrund, kan känna sig välkomna och förberedda för sin nya arbetsplats.</p>
-                            Genom att använda teknik och innovation inom lärande vill vi stärka individer och hjälpa företag att bygga hållbara, framgångsrika team.</p>
- <p className="text-yellow-600 text-base leading-relaxed lg:text-start text-center font-semibold">Vi hjälper er att skapa en starkare kedja genom att stärka er viktigaste tillgång – era människor.
-</p>
-                        </div>
-                        <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
-                            <div class="flex-col justify-start items-start inline-flex bg-gray-900 p-5 rounded-r-lg border-l-4 border-yellow-700">
-                                <h3 class="text-yellow-700 text-4xl font-bold font-manrope leading-normal">Vår Mission:</h3>
-                                <h4 class="text-gray-400 font-semibold leading-relaxed pb-2">Att stärka individer för en starkare arbetskraft</h4>
-                                <p className="text-white">På Agoge AB är vårt uppdrag att revolutionera onboarding och lärande genom att skapa en flexibel, engagerande och rolig upplevelse för alla.
-                                     Vi tror att kunskap inte behöver vara tråkig eller svår att ta till sig – det ska vara inspirerande, tillgängligt och lätt att förstå.</p>
-                                     <hr className=" my-8 border-t-2 border-gray-300" />
-                                     <h3 className="text-yellow-700 text-4xl font-bold font-manrope leading-normal">Vårt mål:</h3>
-                                <h4 class="text-gray-400 font-semibold leading-relaxed pb-2">Att få nyanställda att känna stöd ifrån oss på Agoge</h4>
-                                <p className="text-white">På Agoge AB är vårt uppdrag att revolutionera onboarding och lärande genom att skapa en flexibel, engagerande och rolig upplevelse för alla.
-                                     Vi tror att kunskap inte behöver vara tråkig eller svår att ta till sig – det ska vara inspirerande, tillgängligt och lätt att förstå.</p>
-                                
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                    
+                <div className="text-sm leading-6">
+                  <p className="font-semibold text-agoge-500">The realization</p>
+                  <p className="text-gray-300">Learning shouldn't stop after formal education</p>
                 </div>
+              </div>
             </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative isolate overflow-hidden rounded-2xl border border-gray-200 px-8 py-12 shadow-lg sm:px-12"
+          >
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.blue.500),transparent)] opacity-10" />
+            <div className="absolute inset-y-0 left-0 -z-10 w-1/2 bg-gradient-to-r from-stone-950" />
+            <div className="mx-auto max-w-xl">
+              <h2 className="text-3xl font-bold tracking-tight text-agoge-500">
+                Our Mission
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-300">
+                To reawaken the innate human drive to learn, grow and explore. We create experiences that make learning irresistible again - breaking the trance of passive existence.
+              </p>
+              <div className="mt-8 flex items-center gap-x-4">
+                <div className="rounded-full bg-gray-100 p-1">
+                  <div className="rounded-full bg-gradient-to-r to-agoge-500 from-orange-300 p-1">
+                    <div className="rounded-full bg-white p-2 text-gray-900">
+                      🎯
+                    </div>
+                  </div>
+                </div>
+                <div className="text-sm leading-6">
+                  <p className="font-semibold text-agoge-500">The transformation</p>
+                  <p className="text-gray-300">From passive consumers to active learners</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
-    </section>
-    )
+        <div className="mt-16 text-center text-gray-700">
+        <a
+                href="/onboarding"
+                className="rounded-md border-blue-200/40 border-2 shadow-xl shadow-primary-400/20 px-3.5 py-2.5 text-m font-semibold text-gray-100  focus-visible:outline-2 focus-visible:outline-offset-2 hover:text-xl  duration-200 "
+              >
+                Learn more about our mission
+              </a>
+        </div>
+    </div>
+    );
 }
+export default OurMission;
