@@ -56,6 +56,7 @@ export default function Testimonial() {
           <figure className="mt-5">
             <blockquote className=" text-center text-xl/8   text-white sm:text-2xl/9">
               <p>
+  
               Med <span className="text-primary-custom font-semibold">Agoge AB´s </span>Pre/on-boarding-app har vi fått ett fantastiskt verktyg för introduktion och utbildning av praktikanter, sommarjobbare och nyanställda. 
             <p className="pt-5">Med <span className="text-primary-custom font-semibold">fem smarta kapitel </span>täcker vi in värderingar,</p> trivselregler, första dan på jobbet, säkerhetsregler och kvalitetsinformation – allt tillgängligt i mobilen på ett roligt och underfundigt sätt. 
             </p> <p className="pt-5">På köpet fick vi också ett dokumentarkiv med blanketter och information som kan vara svår att komma ihåg</p>

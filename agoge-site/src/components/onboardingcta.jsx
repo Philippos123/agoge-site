@@ -1,4 +1,7 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import CloudArrowUpIcon from '@heroicons/react/20/solid/CloudArrowUpIcon';
+import LockClosedIcon from '@heroicons/react/20/solid/LockClosedIcon';
+import ServerIcon from '@heroicons/react/20/solid/ServerIcon';
+
 import {gsap} from 'gsap'
 import { useEffect } from 'react'
 
